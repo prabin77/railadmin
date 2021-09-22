@@ -217,7 +217,7 @@ class _SchedulesState extends State<Schedules> {
                   ),
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => ChangeTime()));
+                        MaterialPageRoute(builder: (context) => ChangeTime(schedule_id: widget.sc!.document_id,name: widget.sc!.train_name,)));
                   },
                   child: Row(
                     children: <Widget>[
